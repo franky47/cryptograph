@@ -1,0 +1,19 @@
+{
+  "name": "cryptograph",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "deploy:publish": "now",
+    "deploy:link": "now alias",
+    "deploy:cleanup": "now rm --safe cryptograph -y",
+    "deploy": "yarn deploy:publish && yarn deploy:link && yarn deploy:cleanup"
+  },
+  "dependencies": {
+    "apollo-server-micro": "^2.1.0",
+    "graphql": "^14.0.2",
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.0"
+  }
+}

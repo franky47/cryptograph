@@ -1,0 +1,9 @@
+{
+  "name": "cryptograph",
+  "alias": "cryptograph",
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  },
+  "public": true
+}
